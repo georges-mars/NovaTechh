@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import api from 'https://github.com/georges-mars/Novatech/blob/main/src/api';
+//import api from 'https://github.com/georges-mars/Novatech/blob/main/src/api';
 import axios from "axios";
 
 const Contact = () => {
