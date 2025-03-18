@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import api from 'https://github.com/georges-mars/Novatech/blob/main/src/api';
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await api.post('/api/contact/', formData);
+      await axios.post('https://novatech-backend-9kqw.onrender.com/api/contact/', formData);
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', phone: '', message: '' }); 
      
